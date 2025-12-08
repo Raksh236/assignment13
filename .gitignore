@@ -1,0 +1,13 @@
+# frontend dependencies
+node_modules/
+
+# backend dependencies
+server/node_modules/
+
+# environment variables / secrets
+.env
+server/.env
+
+# OS / IDE junk files
+.DS_Store
+npm-debug.log*
