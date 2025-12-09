@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const productsRouter = require("./routes/products");
+require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 5001;
@@ -9,9 +10,7 @@ const PORT = process.env.PORT || 5001;
 app.use(cors());
 app.use(express.json());
 
-const mongoURI =
-  process.env.MONGODB_URI ||
-  "mongodb+srv://rakshitha:rakshitha369@cluster0.wnf1yb4.mongodb.net/assignment13?retryWrites=true&w=majority";
+const mongoURI = process.env.MONGODB_URI;
 
 mongoose
   .connect(mongoURI, {
