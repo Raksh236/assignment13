@@ -1,4 +1,3 @@
-
 {
   "name": "assignment13-backend",
   "version": "1.0.0",
@@ -10,6 +9,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^4.18.2",
     "mongoose": "^7.6.0"
   },
